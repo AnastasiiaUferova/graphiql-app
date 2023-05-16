@@ -1,14 +1,13 @@
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import { Docs } from 'components/Docs';
-import { Editor } from 'components/main/Editor';
 import { ResponseComponent } from 'components/main/Response';
 import { Dispatch, SetStateAction, createContext, useState, useContext } from 'react';
-import RequestArea, { DEFAULT_QUERY } from 'components/RequestArea';
+import RequestArea from 'components/RequestArea';
 import '../components/main/temp.css'; //template
-import { VariablesBlock } from 'components/main/Variables';
+import { API_URL } from '_constants/apiURL';
 
 const client = new ApolloClient({
-  uri: 'https://rickandmortyapi.com/graphql',
+  uri: API_URL,
   cache: new InMemoryCache(),
 });
 
@@ -20,7 +19,7 @@ interface ContextType {
   request: RequestType;
 }
 export interface VarsType {
-  id: string;
+  characterId: string;
 }
 export interface RequestType {
   query?: string;
@@ -37,19 +36,18 @@ export const useQueryContext = () => {
   return ctx;
 };
 
-const initialQuery = `query($id:ID!) {
-  character(id:$id){
-    name,
+const DEFAULT_QUERY = `query Character($characterId: ID!) {
+  character(id: $characterId) {
+    name
+    gender
     id
   }
-}
-`;
+}`;
 
 export default function MainPage() {
-  const [query, setQuery] = useState<string>(initialQuery);
-  const [variables, setVariables] = useState<VarsType | undefined>({ id: '2' });
+  const [query, setQuery] = useState<string>(DEFAULT_QUERY);
+  const [variables, setVariables] = useState<VarsType | undefined>();
   const [request, setRequest] = useState<RequestType>({});
-  const [value, setValue] = useState(DEFAULT_QUERY);
 
   const runRequest = () => {
     setRequest({ query, variables });
@@ -61,7 +59,7 @@ export default function MainPage() {
         <Ctx.Provider value={{ query, setQuery, variables, setVariables, request }}>
           <div className="flex justify-between">
             <Docs />
-            <RequestArea value={value} onChange={(val) => setValue(val)} />
+            <RequestArea startReq={runRequest} />
             <ResponseComponent />
           </div>
         </Ctx.Provider>

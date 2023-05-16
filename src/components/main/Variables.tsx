@@ -5,10 +5,10 @@ export const VariablesBlock = () => {
   const { setVariables } = useQueryContext();
   const [opened, setOpened] = useState<boolean>(false);
   return (
-    <div className="variables">
+    <div className="relative">
       <p>Variables</p>
       <div
-        className="arrow"
+        className="absolute right-4 top-0 cursor-pointer"
         onClick={() => {
           setOpened((prev) => !prev);
         }}
@@ -17,8 +17,12 @@ export const VariablesBlock = () => {
       </div>
       {opened && (
         <label>
-          &#123; id:
-          <input size={3} onChange={({ target: { value } }) => setVariables({ id: value })} />
+          &#123; characterId:
+          <input
+            className="mx-1"
+            size={3}
+            onChange={({ target: { value } }) => setVariables({ characterId: value })}
+          />
           &#125;
         </label>
       )}
