@@ -23,5 +23,5 @@ export const ResponseComponent = () => {
     request: { query },
   } = useQueryContext();
   const content = query ? <RickResponse query={query} /> : null;
-  return <div className="resp-container">{content}</div>;
+  return <div className="basis-1/3">{content}</div>;
 };

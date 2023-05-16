@@ -3,7 +3,6 @@ import { Docs } from 'components/Docs';
 import { ResponseComponent } from 'components/main/Response';
 import { Dispatch, SetStateAction, createContext, useState, useContext } from 'react';
 import RequestArea from 'components/RequestArea';
-import '../components/main/temp.css'; //template
 import { API_URL } from '_constants/apiURL';
 
 const client = new ApolloClient({
