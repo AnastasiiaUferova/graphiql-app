@@ -5,10 +5,10 @@ import { useEffect, useState } from 'react';
 import { buildHTTPExecutor } from '@graphql-tools/executor-http';
 import { schemaFromExecutor } from '@graphql-tools/wrap';
 import clsx from 'clsx';
-import { useQueryContext } from 'pages/MainPage';
-import { VariablesBlock } from './main/Variables';
+import { VariablesBlock } from './Variables';
 import { FC } from 'react';
 import { API_URL } from '_constants/apiURL';
+import { useQueryContext } from './QueryContext';
 
 const RequestArea: FC<{ startReq: () => void; className?: string }> = ({ startReq, className }) => {
   const [graphQLSchema, setGraphQLSchema] = useState<GraphQLSchema>();

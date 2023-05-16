@@ -1,4 +1,4 @@
-import { useQueryContext } from 'pages/MainPage';
+import { useQueryContext } from './QueryContext';
 import { useState } from 'react';
 
 export const VariablesBlock = () => {

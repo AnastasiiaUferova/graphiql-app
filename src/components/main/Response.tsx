@@ -1,5 +1,5 @@
 import { useQuery, gql } from '@apollo/client';
-import { useQueryContext } from 'pages/MainPage';
+import { useQueryContext } from './QueryContext';
 import { FC } from 'react';
 
 const RickResponse: FC<{ query: string }> = ({ query }) => {
