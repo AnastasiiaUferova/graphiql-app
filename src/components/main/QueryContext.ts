@@ -1,8 +1,6 @@
 import { Dispatch, SetStateAction, createContext, useContext } from 'react';
 
-export interface VarsType {
-  characterId: string;
-}
+export type VarsType = Record<string, string>;
 export interface RequestType {
   query?: string;
   variables?: VarsType;

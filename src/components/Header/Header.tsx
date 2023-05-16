@@ -31,7 +31,7 @@ export default function Header() {
   };
 
   return (
-    <header className={className.concat('z-50')}>
+    <header className={className.concat(' z-50')}>
       <nav className="flex justify-between mx-w-screen-xl">
         <NavLink to="/">
           <img className="h-16" src={Logo} />
