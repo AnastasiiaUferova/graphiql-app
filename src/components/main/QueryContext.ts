@@ -12,6 +12,7 @@ export interface ContextType {
   variables?: VarsType;
   setVariables: Dispatch<SetStateAction<VarsType | undefined>>;
   request: RequestType;
+  runRequest: () => void;
 }
 
 const Ctx = createContext<ContextType | undefined>(undefined);

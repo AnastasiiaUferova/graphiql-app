@@ -27,15 +27,17 @@ export const VariablesBlock = () => {
   };
 
   return (
-    <div className="relative">
-      <p>Variables</p>
-      <div
-        className="absolute right-4 top-0 cursor-pointer"
-        onClick={() => {
-          setOpened((prev) => !prev);
-        }}
-      >
-        {!opened ? '\u23f7' : '\u23f6'}
+    <>
+      <div className="flex justify-between">
+        <p>Variables</p>
+        <div
+          className="mr-2 cursor-pointer"
+          onClick={() => {
+            setOpened((prev) => !prev);
+          }}
+        >
+          {!opened ? '\u23f7' : '\u23f6'}
+        </div>
       </div>
       {opened && (
         <label>
@@ -58,6 +60,6 @@ export const VariablesBlock = () => {
           &#125;
         </label>
       )}
-    </div>
+    </>
   );
 };

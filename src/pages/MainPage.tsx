@@ -2,13 +2,13 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import {
   Docs,
   ResponseComponent,
-  RequestArea,
   RequestType,
   VarsType,
   QueryContextProvider,
 } from 'components/main';
 import { useState } from 'react';
 import { API_URL } from '_constants/apiURL';
+import { Editor } from 'components/main/Editor';
 
 const client = new ApolloClient({
   uri: API_URL,
@@ -35,10 +35,12 @@ export default function MainPage() {
   return (
     <>
       <ApolloProvider client={client}>
-        <QueryContextProvider value={{ query, setQuery, variables, setVariables, request }}>
+        <QueryContextProvider
+          value={{ query, setQuery, variables, setVariables, request, runRequest }}
+        >
           <div className="flex justify-between">
             <Docs />
-            <RequestArea startReq={runRequest} />
+            <Editor />
             <ResponseComponent />
           </div>
         </QueryContextProvider>
