@@ -1,0 +1,76 @@
+{
+    "header": {
+        "mainPage": "Main page",
+        "signInButton": "Sign In",
+        "signUpButton": "Sign Up",
+        "signOutButton": "Sign Out",
+        "ru": "RU",
+        "en": "EN"
+    },
+    "welcomePage": {
+        "cover": {
+            "title": "GraphiQL Project",
+            "description": "A playground/IDE for graphQL requests, final project for RSS React 2023 Q1 course",
+            "github": "Github Repo"
+        },
+        "about": {
+            "title": "About Project",
+            "aboutApp": "This is a GraphQl playground web app that provides a GraphQL interface available to authorized users after registration. Users land on a welcome page where they can sign in or sign up if they are not authorized. Authorized users are directed to the main page,which includes a GraphQL interface.",
+            "apiName": "Rick and Morty API",
+            "queries": "The main page interface allows users to send GraphQL queries to ",
+            "aboutApi": ". It includes a request editor for composing queries, a variables editor for managing query variables, and a lazy-loaded documentation explorer, providing insights into the API's schema when a successful schema response is received.",
+            "aboutStyles": "The app has a sticky header that changes color when scrolling and includes a sign-out button. It also supports localization in Russian and English. Authentication and authorization are handled using Firebase with email options. Client-side validation ensures secure input. The footer contains links to the author's GitHub profiles and the course reference.",
+            "overall": "Overall, this project showcases a robust implementation of a GraphQL web app with key features for an enhanced user experience.",
+            "aboutCourse": "This app is a final project for RS School React 2023 course where we learned more about React.js, Redux and testing. RS School is free-of-charge and community-based education program conducted by The Rolling Scopes developer community."
+        },
+        "technologies": {
+            "title": "Technologies used"
+        },
+        "developers": {
+            "title": "Developers",
+            "devs": {
+                "Anastasiia Iuferova": "Anastasiia Iuferova",
+                "Hanna Biruk": "Hanna Biruk",
+                "Sergij Kusyy": "Sergij Kusyy",
+                "I'm a Frontend Engineer based in Warsaw, Poland. I specialize in React, Redux, TypeScript, and JavaScript, creating web experiences that truly captivate users. I love solving problems and keeping up with the latest tech trends. Collaboration is important to me, as it brings fresh ideas and leads to great results. When I'm not coding, I explore the tech community for inspiration and to fuel my creative solutions.": "I'm a Frontend Engineer based in Warsaw, Poland. I specialize in React, Redux, TypeScript, and JavaScript, creating web experiences that truly captivate users. I love solving problems and keeping up with the latest tech trends. Collaboration is important to me, as it brings fresh ideas and leads to great results. When I'm not coding, I explore the tech community for inspiration and to fuel my creative solutions.",
+                "I'm a Frontend Developer with 1 year of experience, committed to delivering user-friendly solutions. Skilled in a range of web development technologies including TypeScript, React.js, REST API, Redux Toolkit and CSS/SCSS. Passionate about building web apps from scratch and enhancing existing ones. Always looking for opportunities to sharpen my skills. Based in Warsaw, Poland.": "I'm a Frontend Developer with 1 year of experience, committed to delivering user-friendly solutions. Skilled in a range of web development technologies including TypeScript, React.js, REST API, Redux Toolkit and CSS/SCSS. Passionate about building web apps from scratch and enhancing existing ones. Always looking for opportunities to sharpen my skills. Based in Warsaw, Poland.",
+                "I'm a Junior Frontend Developer from Częstochowa (Poland) with a passion for creating engaging web experiences. I specialize in JS, TS, React.js, and Angular partly. I am open to new challenges and excited about the opportunity as a professional front-end developer.": "I'm a Junior Frontend Developer from Częstochowa (Poland) with a passion for creating engaging web experiences. I specialize in JS, TS, React.js, and Angular partly. I am open to new challenges and excited about the opportunity as a professional front-end developer."
+            }
+        }
+    },
+    "mainPage": {
+        "request": "Request",
+        "runButton": "Run",
+        "documents": "Documents",
+        "variables": "Variables",
+        "response": "Response"
+    },
+    "footer": {
+        "devs": {
+            "Anastasiia Iuferova": "Anastasiia Iuferova",
+            "Hanna Biruk": "Hanna Biruk",
+            "Sergij Kusyy": "Sergij Kusyy"
+        }
+    },
+    "signIn": {
+        "title": "Sign in to your account",
+        "email": "Your email",
+        "password": "Password",
+        "button": "Sign in",
+        "dontHaveAccount": "Don’t have an account yet?",
+        "register": "Register",
+        "error": "Something went wrong! Check your email and password and try again!"
+    },
+    "signUp": {
+        "title": "Create an account",
+        "name": "Your Full Name",
+        "email": "Your email",
+        "password": "Password",
+        "confirmPassword": "Confirm Password",
+        "button": "Create an account",
+        "haveAccount": "Already have an account?",
+        "login": "Login here",
+        "doesntMatchError": "Passwords don't match",
+        "invalidPasswordError": "Invalid password. Password should contain a minimum of 8 symbols, at least one letter, one digit, and one special character"
+    }
+}

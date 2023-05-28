@@ -1,0 +1,76 @@
+{
+    "header": {
+        "mainPage": "Главная",
+        "signInButton": "Вход",
+        "signUpButton": "Регистрация",
+        "signOutButton": "Выйти",
+        "ru": "РУС",
+        "en": "ENG"
+    },
+    "welcomePage": {
+        "cover": {
+            "title": "GraphiQL Проект",
+            "description": "Игровая площадка/IDE для запросов graphQL, финальный проект для курса RSS React 2023 Q1",
+            "github": "Github Репозиторий"
+        },
+        "about": {
+            "title": "О проекте",
+            "aboutApp": "Это веб-приложение для игровой площадки GraphQl, которое предоставляет интерфейс GraphQL, доступный авторизованным пользователям после регистрации. Пользователи попадают на страницу приветствия, где они могут войти или зарегистрироваться, если они не авторизованы. Авторизованные пользователи перенаправляются на главную страницу, которая включает в себя интерфейс GraphQL.",
+            "apiName": "Rick and Morty API",
+            "queries": "Интерфейс главной страницы позволяет пользователям отправлять запросы GraphQL в ",
+            "aboutApi": ". Он включает в себя редактор запросов для составления запросов, редактор переменных для управления переменными запросов и обозреватель документации с отложенной загрузкой, предоставляющий информацию о схеме API при получении успешного ответа схемы.",
+            "aboutStyles": "Приложение имеет липкий заголовок, который меняет цвет при прокрутке и включает кнопку выхода. Также поддерживается локализация на русский и английский языки. Аутентификация и авторизация обрабатываются с помощью Firebase с параметрами электронной почты. Проверка на стороне клиента обеспечивает безопасный ввод. Нижний колонтитул содержит ссылки на профили авторов на GitHub и ссылку на курс.",
+            "overall": "В целом, этот проект демонстрирует надежную реализацию веб-приложения GraphQL с ключевыми функциями для улучшения взаимодействия с пользователем.",
+            "aboutCourse": "Это приложение является завершающим проектом курса RS School React 2023, где мы узнали больше о React.js, Redux и тестировании. RS School — это бесплатная образовательная программа для сообщества, проводимая сообществом разработчиков The Rolling Scopes."
+        },
+        "technologies": {
+            "title": "Используемые технологии"
+        },
+        "developers": {
+            "title": "Разработчики",
+            "devs": {
+                "Anastasiia Iuferova": "Анастасия Юферова",
+                "Hanna Biruk": "Анна Бирюк",
+                "Sergij Kusyy": "Сергей Кусий",
+                "I'm a Frontend Engineer based in Warsaw, Poland. I specialize in React, Redux, TypeScript, and JavaScript, creating web experiences that truly captivate users. I love solving problems and keeping up with the latest tech trends. Collaboration is important to me, as it brings fresh ideas and leads to great results. When I'm not coding, I explore the tech community for inspiration and to fuel my creative solutions.": "Я Frontend Engineer из Варшавы, Польша. Я специализируюсь на React, Redux, TypeScript и JavaScript, создавая веб-приложения, которые действительно очаровывают пользователей.Я люблю решать проблемы и быть в курсе последних технологических тенденций. Сотрудничество важно для меня, так как приносит свежие идеи и приводит к отличным результатам. Когда я не программирую, я изучаю техническое сообщество в поисках вдохновения и подпитки своих творческих решений.",
+                "I'm a Frontend Developer with 1 year of experience, committed to delivering user-friendly solutions. Skilled in a range of web development technologies including TypeScript, React.js, REST API, Redux Toolkit and CSS/SCSS. Passionate about building web apps from scratch and enhancing existing ones. Always looking for opportunities to sharpen my skills. Based in Warsaw, Poland.": "Я Frontend-разработчик с 1 годом опыта, стремящийся предоставлять удобные для пользователя решения. Владеет рядом технологий веб-разработки, включая TypeScript, React.js, REST API, Redux Toolkit и CSS/SCSS. Увлечен созданием веб-приложений с нуля и улучшением существующих. Всегда ищу возможности отточить свои навыки. Базируется в Варшаве, Польша.",
+                "I'm a Junior Frontend Developer from Częstochowa (Poland) with a passion for creating engaging web experiences. I specialize in JS, TS, React.js, and Angular partly. I am open to new challenges and excited about the opportunity as a professional front-end developer.": "Я младший разработчик внешнего интерфейса из Ченстохова (Польша), страстно увлеченный созданием увлекательных веб-приложений. Специализируюсь на JS, TS, React.js и частично Angular. Я открыт для новых вызовов и рад возможности стать профессиональным фронтенд-разработчиком."
+            }
+        }
+    },
+    "mainPage": {
+        "request": "Запрос",
+        "runButton": "Запуск",
+        "documents": "Документы",
+        "variables": "Переменные",
+        "response": "Ответ"
+    },
+    "footer": {
+        "devs": {
+            "Anastasiia Iuferova": "Анастасия Юферова",
+            "Hanna Biruk": "Анна Бирюк",
+            "Sergij Kusyy": "Сергей Кусий"
+        }
+    },
+    "signIn": {
+        "title": "Войдите в свой аккаунт",
+        "email": "Почта",
+        "password": "Пароль",
+        "button": "Войти",
+        "dontHaveAccount": "У вас еще нет аккаунта?",
+        "register": "Регистрация",
+        "error": "Что-то пошло не так! Проверьте почту и пароль и повторите попытку!"
+    },
+    "signUp": {
+        "title": "Создать аккаунт",
+        "name": "Полное имя",
+        "email": "Почта",
+        "password": "Пароль",
+        "confirmPassword": "Подтвердите пароль",
+        "button": "Зарегестрироваться",
+        "haveAccount": "У вас уже есть аккаунт?",
+        "login": "Войти здесь",
+        "doesntMatchError": "Пароли не совпадают",
+        "invalidPasswordError": "Неверный пароль. Пароль должен содержать не менее 8 символов, по крайней мере, одну букву, одну цифру и один специальный символ."
+    }
+}
